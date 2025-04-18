@@ -1,15 +1,15 @@
 . + {
   properties: {},
   tippecanoe: {
-    minzoom: 12,
-    maxzoom: 13, 
+    minzoom: 8,
+    maxzoom: 15, 
     layer: "percel"
   }
 }, 
 . + {
   tippecanoe: {
-    minzoom: 14,
-    maxzoom: 16,
+    minzoom: 16,
+    maxzoom: 17,
     layer: "parcel"
   }
 }
