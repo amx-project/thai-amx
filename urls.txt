@@ -1,0 +1,5 @@
+https://data.go.th/dataset/6a99c22e-5140-48c6-81e5-40b9eb072eaf/resource/c287e6e7-c389-47e1-adb6-88b11bb39e61/download/landparcel-nonthaburi-se5wom.zip
+https://data.go.th/dataset/5db43127-3d7c-45e5-ac34-20e5a96a514b/resource/aba9df8a-4577-40fc-acf5-914ec8b2df00/download/landparcel-pathumthani-rctn7x.zip
+https://data.go.th/dataset/123b194b-4232-447e-a61d-7f2777b46909/resource/8ca9a392-d0ca-4324-ad51-585513c79721/download/landparcel-samutprakan-2dbjyi.zip
+https://data.go.th/dataset/d3ed37cd-07f5-45a7-9786-11470889fdce/resource/7451f517-0296-40bf-b775-31ef9bfb2a9f/download/landparcel-samutsakhon-ha4gz3.zip
+
