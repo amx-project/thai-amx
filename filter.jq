@@ -3,7 +3,7 @@
   tippecanoe: {
     minzoom: 8,
     maxzoom: 15, 
-    layer: "percel"
+    layer: "parcel"
   }
 }, 
 . + {
