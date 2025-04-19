@@ -8,5 +8,9 @@ unrar:
 	ruby unrar.rb | sh
 
 produce:
-	ruby stream.rb | sh | jq -c -f filter.jq | tippecanoe -f -o thai-amx.pmtiles --maximum-zoom=17
+	ruby stream.rb | sh | jq -c -f filter.jq | tippecanoe -f -o thai-amx.pmtiles \
+	--maximum-zoom=17 --drop-fraction-as-needed --drop-densest-as-needed 
 
+upload:
+	aws s3 cp thai-amx.pmtiles s3://smartmaps/sugi/thai-amx.pmtiles \
+	--endpoint-url=https://data.source.coop
