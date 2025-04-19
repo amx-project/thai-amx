@@ -16,5 +16,6 @@ upload:
 	--endpoint-url=https://data.source.coop
 
 pages:
+	rm docs/assets/*
 	cp -r vite/dist/. docs/
 
