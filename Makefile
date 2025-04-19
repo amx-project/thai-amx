@@ -14,3 +14,7 @@ produce:
 upload:
 	aws s3 cp thai-amx.pmtiles s3://smartmaps/sugi/thai-amx.pmtiles \
 	--endpoint-url=https://data.source.coop
+
+pages:
+	cp -r vite/dist/. docs/
+
