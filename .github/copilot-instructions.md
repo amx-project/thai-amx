@@ -1,5 +1,10 @@
 # Copilot Instructions
 
+## Thai AMX
+This is a prototype that demonstrates the use of vector tiles as a part of United Nations Vector Tile Toolkit (UNVT) Portable Option D (POD). 
+
+We use CLI tools, such as tippecanoe, jq, go-pmtiles, vite, and Martin to implement the service. 
+
 このファイルは、このプロジェクトにおいて GitHub Copilot を効果的に活用するためのガイドラインや設定に関する情報を提供します。
 
 ## プロジェクト固有の設定
