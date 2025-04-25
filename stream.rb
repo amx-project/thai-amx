@@ -7,3 +7,4 @@ Find.find('src') {|path|
 ogr2ogr -f GeoJSONSeq /vsistdout/ #{params} "#{path}"
   EOS
 }
+

@@ -1,6 +1,7 @@
 *.zip
 src/*
 *.pmtiles*
+*.fgb
 
 node_modules
 package-lock.json

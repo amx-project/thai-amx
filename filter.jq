@@ -9,7 +9,7 @@
 . + {
   tippecanoe: {
     minzoom: 16,
-    maxzoom: 17,
+    maxzoom: 16,
     layer: "parcel"
   }
 }
