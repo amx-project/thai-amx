@@ -19,7 +19,7 @@ prod:
 	ogr2ogr -f GeoJSONSeq /vsistdout/ thai-amx.fgb | \
 	jq -c -f filter.jq | tippecanoe -f -o thai-amx.pmtiles \
 	--temporary-directory=/home/pod/thai-amx \
-	--maximum-zoom=15 --drop-fraction-as-needed --drop-densest-as-needed 
+	--maximum-zoom=15 --drop-fraction-as-needed 
 
 upload:
 	aws s3 cp thai-amx.pmtiles s3://smartmaps/sugi/thai-amx.pmtiles \
