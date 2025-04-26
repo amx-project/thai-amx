@@ -9,7 +9,7 @@ unrar:
 
 produce:
 	ruby stream.rb | sh | jq -c -f filter.jq | tippecanoe -f -o thai-amx.pmtiles \
-	--maximum-zoom=17 --drop-fraction-as-needed --drop-densest-as-needed 
+	--maximum-zoom=15 --drop-fraction-as-needed --drop-densest-as-needed 
 
 fgb:
 	ruby stream.rb | sh | ogr2ogr -f FlatGeobuf -skipfailures \
@@ -17,9 +17,9 @@ fgb:
 
 prod:
 	ogr2ogr -f GeoJSONSeq /vsistdout/ thai-amx.fgb | \
-	jq -c -f filter.jq | tippecanoe -f -o thai-amx-16.pmtiles \
-	--temporary-directory=/Volumes/Migrate-2025-04/github/thai-amx \
-	--maximum-zoom=16 --drop-fraction-as-needed --drop-densest-as-needed 
+	jq -c -f filter.jq | tippecanoe -f -o thai-amx.pmtiles \
+	--temporary-directory=/home/pod/thai-amx \
+	--maximum-zoom=15 --drop-fraction-as-needed --drop-densest-as-needed 
 
 upload:
 	aws s3 cp thai-amx.pmtiles s3://smartmaps/sugi/thai-amx.pmtiles \
