@@ -8,6 +8,16 @@ The Thai AMX project focuses on creating and sharing geospatial data for Thailan
 
 The `vite` directory is being used to develop a viewer site. A static copy of the site created with Vite will be copied to the `docs` directory, making it accessible via GitHub Pages. This approach ensures that the viewer site is easily shareable and publicly available for users.
 
+## Challenges and Learnings
+
+The project faced significant challenges in addressing discrepancies between the Everest datum and error data. Resolving these issues required careful analysis and validation, ultimately leading to a PMTiles file with a moderate size. Additionally, the team implemented a robust pipeline for generating PMTiles files, ensuring efficient handling of large datasets. This pipeline includes:
+
+- **Coordinate Transformation**: Leveraging the "RTSD parameter" for accurate conversion from the Indian 1975 datum to WGS84.
+- **Data Validation**: Cross-referencing with authoritative sources to ensure data accuracy.
+- **Optimization**: Reducing file size while maintaining data integrity, enabling faster loading times in the PMTiles viewer.
+
+These efforts have significantly improved the usability and reliability of the geospatial data provided by the project.
+
 # Demo
 
 ## with PMTiles viewer

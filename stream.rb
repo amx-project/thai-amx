@@ -4,7 +4,7 @@ params = "-s_srs \"+proj=utm +zone=47 +ellps=evrst30 +towgs84=206.000,837.000,29
 Find.find('src') {|path|
   next unless /polygon.*?shp$/.match path
   print <<-EOS
-ogr2ogr -f GeoJSONSeq /vsistdout/ #{params} "#{path}"
+ogr2ogr -f GeoJSONSeq /vsistdout/ "#{path}" #{params}
   EOS
 }
 

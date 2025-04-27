@@ -1,61 +1,12 @@
 # Copilot Instructions
 
-## Thai AMX
-This is a prototype that demonstrates the use of vector tiles as a part of United Nations Vector Tile Toolkit (UNVT) Portable Option D (POD). 
+## 基本方針
+- オープンソースソフトウェアを使用する。
+- 日本語を使うと明示されない限りは、英語を使う。
+- 注釈はなるべく使わず、コードはできるだけ短いものになるようにする。
+- 英語は simple, constructive, and polite English にする。
+- 日本語でも同様に、シンプルで建設的で丁寧な日本語を用いる。
 
-We use CLI tools, such as tippecanoe, jq, go-pmtiles, vite, and Martin to implement the service. 
-
-このファイルは、このプロジェクトにおいて GitHub Copilot を効果的に活用するためのガイドラインや設定に関する情報を提供します。
-
-## プロジェクト固有の設定
-
-1. **Makefile を活用**  
-    すべての処理は `Makefile` を通じて実行できるように設計されています。必要なタスクを `make` コマンドで実行してください。
-
-2. **使用する技術スタック**  
-    このプロジェクトでは以下の技術を使用しています:
-    - **Ruby**: アプリケーションロジックやスクリプトの実行に使用します。
-    - **Vite**: フロントエンドのビルドツールとして使用します。
-    - **go-pmtiles**: PMTiles の操作や処理に使用します。
-
-3. **環境設定**  
-    必要な依存関係をインストールするには、以下のコマンドを実行してください:
-    ```bash
-    make setup
-    ```
-
-## 推奨ワークフロー
-
-1. **開発サーバーの起動**  
-    開発環境を起動するには、以下を実行してください:
-    ```bash
-    make dev
-    ```
-
-2. **ビルド**  
-    プロジェクトをビルドするには、以下を実行してください:
-    ```bash
-    make build
-    ```
-
-3. **テスト**  
-    テストを実行するには、以下を実行してください:
-    ```bash
-    make test
-    ```
-
-## ベストプラクティス
-
-- **コメントを活用**  
-    Copilot に意図を伝えるために、コード内にコメントを記述してください。
-- **小さな単位で補完をリクエスト**  
-    より正確な提案を得るために、小さなコード単位で補完をリクエストしてください。
-- **提案の確認と編集**  
-    提案されたコードをそのまま使用せず、プロジェクトに適合するように編集してください。
-
-## 注意事項
-
-- Copilot の提案は必ずしも正確ではありません。提案されたコードをレビューし、適切性を確認してください。
-- 機密情報や認証情報を含むコードを補完に使用しないでください。
-
-以上のガイドラインを参考に、Copilot を最大限に活用してください。
+# プロジェクトの位置付け
+- https://github.com/amx-project にある、Adopt Map XML Project の一部である。
+- https://unopengis.github.io/smartmaps にある、UN Smart Maps Group の構成員が実施しているプロジェクトである。
