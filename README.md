@@ -18,6 +18,22 @@ The project faced significant challenges in addressing discrepancies between the
 
 These efforts have significantly improved the usability and reliability of the geospatial data provided by the project.
 
+## PMTiles Details
+
+The project uses PMTiles to efficiently store and serve geospatial data. PMTiles is a single-file archive format optimized for tiled data, making it ideal for web-based mapping applications. The following steps outline the process of generating PMTiles files for this project:
+
+1. **Data Preparation**: Source data is collected from authoritative datasets, such as land parcel information from Thailand's government open data portal.
+2. **Coordinate Transformation**: Data is transformed from the Indian 1975 datum to WGS84 using the "RTSD parameter" for accuracy.
+3. **Tile Generation**: Geospatial data is converted into vector tiles using tools like `tippecanoe` or custom scripts.
+4. **PMTiles Packaging**: The tiles are packaged into a PMTiles file, ensuring efficient storage and retrieval.
+
+### Benefits of PMTiles
+- **Single File**: Simplifies deployment and sharing.
+- **Efficient Loading**: Optimized for fast access in web applications.
+- **Scalability**: Handles large datasets effectively.
+
+The generated PMTiles file is hosted and can be accessed via the [PMTiles Viewer Demo](https://pmtiles.io/?url=https%3A%2F%2Fdata.source.coop%2Fsmartmaps%2Fsugi%2Fthai-amx.pmtiles#map=9.29/13.864/100.5039).
+
 # Demo
 
 ## with PMTiles viewer

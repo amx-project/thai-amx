@@ -35,3 +35,6 @@ pages:
 	rm docs/assets/*
 	cp -r vite/dist/. docs/
 
+martin:
+	martin --config martin-config.yaml
+
